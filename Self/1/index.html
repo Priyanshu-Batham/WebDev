@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hm</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <span class="fa fa-times" id="band" onclick="hideMenu()"></span>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="fa fa-bars" id="khul" onclick="showMenu()"></span>
+        </nav>
+        <div class="text-box">
+            <h1>Priyanshu Batham</h1>
+            <p> Lorem ipsum dolor akgbj oashfbojgb pasjv si'ag pasgpjh sit amet consectetur adipisicing elit. Obcaecati,
+                reprehenderit? </p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+    </section>
+
+
+    <!-- -----CarModels----- -->
+
+
+    <section class="carmodel">
+        <h1>Car Models</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempore in! Accusamus dolor ipsam
+            praesentium vel recusandae delectus laborum aut?</p>
+
+        <div class="row">
+            <div class="model-col A-tier">
+                <h1>A-tier</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis architecto eligendi delectus
+                    unde voluptas quis culpa facere ducimus eum laudantium est maxime iure harum soluta, sit assumenda
+                    id deserunt!</p>
+            </div>
+
+            <div class="model-col S-tier">
+                <h1>S-tier</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis architecto eligendi delectus
+                    unde voluptas quis culpa facere ducimus eum laudantium est maxime iure harum soluta, sit assumenda
+                    id deserunt!</p>
+            </div>
+
+            <div class="model-col B-tier">
+                <h1>B-tier</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis architecto eligendi delectus
+                    unde voluptas quis culpa facere ducimus eum laudantium est maxime iure harum soluta, sit assumenda
+                    id deserunt!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- -----JavaScript----- -->
+
+    <script>
+
+        let navLinks = document.querySelector('#navLinks');
+        const showMenu = () => {
+            navLinks.style.right = 0;
+        }
+
+        navLinks = document.querySelector('#navLinks');
+        const hideMenu = () => {
+            navLinks.style.right = '-201px';
+        }
+    </script>
+
+</body>
+
+</html>
