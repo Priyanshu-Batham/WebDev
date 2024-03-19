@@ -8,12 +8,14 @@
     <h1>My Registration Page</h1>
 
     <form>
+        <fieldset>
+            <legend><h3>General Info</h3></legend>
         <label for = "firstName">First name: </label>
-        <input type = "text" name = "firstName">
+        <input type = "text" name = "firstName" required>
         <br><br>
 
         <label for = "lastName">Last name: </label>
-        <input type = "text" name = "lastName">
+        <input type = "text" name = "lastName" readonly>
         <br><br>
 
         <label for = "pass"> Password:  </label>
@@ -22,17 +24,57 @@
 
         <label for = "retypePass"> Re-Type Password:  </label>
         <input type = "password" name = "retypePass">
+        </fieldset>
         <br><br>
 
-        <h3>SEX</h3>
+        <fieldset>
+        <legend><h3>Gender</h3></legend>
+        
         <input type = "radio" name = "sex" value = "Male">Male<br><br>
         <input type = "radio" name = "sex" value = "Female">Female<br><br>
+        </fieldset>
+        <br><br>
 
-        <h2>Additional Information</h2>
+        <fieldset>
+        <legend><h3>Additional Information</h3></legend>
         <input type = "checkbox" value = "mailList" name = "mailList">Put me on mail list
         <br><br>
 
+        <label for="resume">Resume: </label>
+        <input type="file" name="resume" accept=".jpg" multiple>
+        <br><br>
+
+        <label for="city">City: </label>
+        <select name="city" size="1">
+            <option>None</option>
+            <option>Lucknow</option>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+            <optgroup>
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Banglore</option>
+            </optgroup>
+            <option>Bihar</option>
+        </select>
+        <br><br>
+
+        <label for="rang">Favorite Color:</label>
+        <input type="color" name="rang">
+        <br><br>
+
+        <label for="range">Range: </label>
+        <input type="range" name="range" min= "1" max="3">
+        <br><br>
+
+        <label for="textarea">Description: </label>
+        <textarea rows="4" cols="35" name="textarea"></textarea>
+        <br><br>
+        </fieldset>
+        <br><br>
+        
         <input type = "reset">
+        <input type = "submit">
     </form>
 </body>
 </html>

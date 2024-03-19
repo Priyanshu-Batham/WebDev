@@ -19,6 +19,13 @@ body{
   background-image: url("assets/1.jpg");
   background-size: cover;
   background-position: center;
+  border: 20px groove red;
+
+  letter-spacing: 0.5rem;
+  line-height: 1rem;
+  word-spacing: 1rem;
+  direction: rtl;
+  font-style: oblique;
 
   h1{
     color:white;
@@ -36,4 +43,5 @@ body{
     color: red;
   }
 }
+
 
