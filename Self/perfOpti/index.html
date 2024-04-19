@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            position: relative;
+        }
+        .box{
+            height: 100px;
+            width: 200px;
+            background-color: white;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        let box = document.querySelector(".box")
+        let toggleDir = false
+        function slide(){
+            if(toggleDir) box.style.transform = "translateX(0)"
+            else box.style.transform = "translateX(80vw)"
+            toggleDir = !toggleDir
+        }
+        setInterval(slide, 500)
+    </script>
+</body>
+</html>

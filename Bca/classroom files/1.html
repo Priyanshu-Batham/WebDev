@@ -1,0 +1,36 @@
+<html>
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+</head>
+
+<body>
+    <center>
+        <h1>addition of two numbers</h1>
+        <table>
+            <tr>
+                <td>First Number :
+                <td><input id="txtFirstNumber" type="text" />
+            </tr>
+            <tr>
+                <td>Second Number:
+                <td><input id="txtSecondNumber" type="text" />
+            </tr>
+            <tr>
+                <td colspan=2><input id="btnAdd" type="button" value="Add" onclick="sum();" />
+            </tr>
+            <tr>
+                <td>Result :
+                <td><input id="txtresult" type="text" />
+            </tr>
+        </table>
+    </center>
+</body>
+<script type="text/javascript">
+    function sum() {
+        var txtFirstNumberValue = document.getElementById('txtFirstNumber').value;
+        var txtSecondNumberValue = document.getElementById('txtSecondNumber').value;
+        txtresult.value = parseInt(txtFirstNumberValue) + parseInt(txtSecondNumberValue);
+    }
+</script>
+
+</html>

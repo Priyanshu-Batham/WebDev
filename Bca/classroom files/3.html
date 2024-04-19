@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Option Box</title>
+    <script type="text/javascript">
+        function f1(a, s) {
+            if (a == "" || s == "") {
+                alert(" SORRY!!!! Please select both cone and flavor..");
+            }
+            else {
+                a = parseInt(a)
+                c = form1.container[a - 1].value;
+                s = form1.flavor[s].value;
+                alert("THANK YOU !!! U have ordered " + c + " having " + s + " flavor.. ");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ice Cream Parlor</h1>
+    <form name="form1" onSubmit="f1(a,this.flavor.selectedIndex);">
+        <p><b>Cup or Cone?</b><br>
+            <input type="radio" name="container" value="Cup" onClick="a=1;"> Cup <br>
+            <input type="radio" name="container" value="Plain Cone" onClick="a=2;"> Plain cone <br>
+            <input type="radio" name="container" value="Sugar Cone" onClick="a=3;"> Sugar cone <br>
+            <input type="radio" name="container" value="Waffle Cone" onClick="a=4;"> Waffle cone <br>
+        </p>
+        <p>
+            <b>Flavor:</b>
+            <select name="flavor">
+                <option value="" disabled selected="selected">SELECT ONE:</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Vanilla">Vanilla</option>
+            </select>
+        </p>
+        <input type="submit" value="Place Order">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Focus and Blur</title>
+    <script type="text/javascript">
+        var monthNumber;
+        var s;
+        function getMonth() {
+            var monthNumber = document.DateForm.MonthNumber.value;
+            monthNumber = parseInt(monthNumber);
+            document.DateForm.MonthName.value = (monthNumber > 0 && monthNumber <= 12) ? monthAsString(monthNumber) : "Not a Month";
+        }
+        function monthAsString(monthNumber) {
+            var m = monthNumber;
+            if (m == 1) {
+                s = "January";
+            }
+            else if (m == 2) {
+                s = "February";
+            }
+            else if (m == 3) {
+                s = "March";
+            }
+            else if (m == 4) {
+                s = "April";
+            }
+            else if (m == 5) {
+                s = "May";
+            }
+            else if (m == 6) {
+                s = "June";
+            }
+            if (m == 7) {
+                s = "July";
+            }
+            else if (m == 8) {
+                s = "August";
+            }
+            else if (m == 9) {
+                s = "September";
+            }
+            else if (m == 10) {
+                s = "October";
+            }
+            else if (m == 11) {
+                s = "November";
+            }
+            else if (m == 12) {
+                s = "December";
+            }
+            return (s);
+        }
+    </script>
+</head>
+
+<body onLoad="document.DateForm.MonthNumber.focus();">
+    <h1>Month Check</h1>
+    <form name="DateForm">
+        Month Number:
+        <input type="text" name="MonthNumber" size="2" onBlur="getMonth();">
+        Month Name:
+        <input type="text" name="MonthName" size="10">
+    </form>
+</body>
+
+</html>

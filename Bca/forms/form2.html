@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>THE FORM</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="">
+        <input type="radio" name="color" value="red" id="red">
+        <label for="red">Red</label>
+
+        <input type="radio" name="color" value="green" id="green">
+        <label for="green">Green</label>
+
+        <input type="radio" name="color" value="blue" id="blue">
+        <label for="blue">Blue</label>
+
+        <select>
+            <option>lucknow</option>
+            <option>delhi</option>
+            <option>mumbai</option>
+            <option>kolkata</option>
+        </select>
+    </form>
+
+
+</body>
+
+<script>
+
+    let arr = document.querySelectorAll("form input")
+    let body = document.querySelector("body");
+
+    arr.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            body.style.backgroundColor = e.target.value;
+        })
+    })
+
+    let select = document.querySelector("select");
+    let option = document.querySelectorAll("select option")
+
+    select.addEventListener("change", (e)=>{
+        window.alert(e.target.value);
+    })
+
+    body.addEventListener("keypress", (e)=>{
+        console.log(e.key);
+    })
+    body.addEventListener("mousedown", (e)=>{
+        console.log(e.button)
+    })
+
+
+
+</script>
+
+</html>

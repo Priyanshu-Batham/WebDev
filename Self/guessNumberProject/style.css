@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: white;
+}
+/*utility classes*/
+.doCenter{
+    padding: 0.6em;
+    text-align: center;
+}
+.button{
+    padding: 0.5em 1em;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    border-style: none;
+}
+/* -------------------------- */
+.header{
+    font-size: 1.5rem;
+}
+
+.instructions{
+    font-size: 1rem;
+}
+
+.heading2{
+    font-size: 2.5rem;
+}
+
+.userInput{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 1em 2em;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.result{
+    font-size: 2rem;
+}
+
+.submitBtn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.prevGuess, .remainingGuess{
+
+    font-size: 1.2rem;
+}
+
