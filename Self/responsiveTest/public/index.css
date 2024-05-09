@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellow;
+    /* height: 100vh; */
+}
+
+.line{
+    height: 80px;
+    /* width: 180px; */
+    background-color: rgb(49, 16, 159);
+}
+
+/* @media screen and (max-width: 360px){
+    .line{
+        background-color: red;
+        height: 70px;
+    }
+}  */

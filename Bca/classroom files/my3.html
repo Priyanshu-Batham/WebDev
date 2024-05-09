@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ice Cream Parlor</h1>
+    <form class="myForm">
+        <h2>Cup or Cone?</h2>
+        <input type="radio" name="iceType" value="Cup">Cup<br/>
+        <input type="radio" name="iceType" value="Plain">Plain<br/>
+        <input type="radio" name="iceType" value="Sugar">Sugar<br/>
+        <input type="radio" name="iceType" value="Waffle">Waffle<br/>
+        <br/>
+
+        <select name="iceFlavor">
+            <option disabled selected>Select One</option>
+            <option>Chocolate</option>
+            <option>Strawberry</option>
+            <option>Vanilla</option>
+        </select>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+
+<script>
+    let myForm = document.querySelector(".myForm");
+
+    myForm.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let form = document.querySelector(".myForm")
+        //fetching ice type from radio button
+        let iceTypeArr = document.getElementsByName("iceType")
+        let iceType = null
+        for(let i of iceTypeArr) if(i.checked == true) iceType = i.value;
+
+        //fetching ice flavor from <select>
+        //<select> is like an array
+        let iceFlavorIndex = form.iceFlavor.selectedIndex;
+        let iceFlavor = form.iceFlavor[iceFlavorIndex].value
+        console.log(iceFlavor)
+
+        if(iceType == null || iceFlavorIndex == 0){
+            alert("Please select an option")
+        }
+        else{
+            alert("Your order is: "+iceType+" Ice Cream with "+iceFlavor+ " flavour")
+        }
+    })
+
+</script>
+</html>

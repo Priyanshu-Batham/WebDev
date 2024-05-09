@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- --------------navbar------------ -->
+    <nav class="flex justify-between py-3">
+        <img class="h-16 ml-2" src="./assets/navbar/CollegeLogo.webp">
+        <ul class="flex items-center mr-2">
+            <li class="mx-3 text-lg cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-purple-700 after:w-0 hover:after:w-full after:duration-500">HOME</li>
+            <li class="mx-3 text-lg cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-purple-700 after:w-0 hover:after:w-full after:duration-500">ABOUT</li>
+            <li class="mx-3 text-lg cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-purple-700 after:w-0 hover:after:w-full after:duration-500">ACADEMICS</li>
+            <li class="mx-3 text-lg cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-purple-700 after:w-0 hover:after:w-full after:duration-500">ADMISSION</li>
+            <li class="mx-3 text-lg cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-purple-700 after:w-0 hover:after:w-full after:duration-500">CONTACT</li>
+            <li class="mx-3 px-5 py-1 cursor-pointer rounded-md bg-purple-800 font-bold text-white text-lg">Login</li>
+            <li class="mx-3 px-5 py-1 cursor-pointer rounded-md bg-purple-800 font-bold text-white text-lg">Register</li>
+        </ul>
+    </nav>
+
+    <!-- -------------first page--------------- -->
+    <div class="flex bg-purple-950 w-full h-[650px]">
+        <div class="w-1/2 ">
+            <div class="ml-52 mt-48">
+                <h1 class=" text-white text-[2.7rem] font-extrabold">National Post</h1>
+                <h1 class="text-white text-[2.7rem] font-extrabold">Graduate College</h1>
+                <p class="mt-3 text-white text-lg font-bold">We Design The Future And Set</p>
+                <p class="text-white text-lg font-bold">Trends For Others To Follow</p>
+                <input class="px-3 py-3 w-full mt-5" type="text" placeholder="What do you want to search?">
+            </div>
+        </div>
+        <div class="w-1/2 bg-[url('./assets/firstPage/1.webp')] bg-no-repeat bg-cover bg-center"></div>
+    </div>
+</body>
+
+</html>

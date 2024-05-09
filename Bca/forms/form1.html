@@ -11,7 +11,7 @@
         <fieldset>
             <legend><h3>General Info</h3></legend>
         <label for = "firstName">First name: </label>
-        <input type = "text" name = "firstName" required>
+        <input type = "text" name = "firstName" >
         <br><br>
 
         <label for = "lastName">Last name: </label>
@@ -77,4 +77,14 @@
         <input type = "submit">
     </form>
 </body>
+<script>
+    let form=document.querySelector("form")
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log('Form Submitted');
+        console.log(form.city.value)
+    });
+
+</script>
 </html>
